@@ -1,0 +1,530 @@
+/* ====== Navbar ====== */
+
+.main-nav {
+  background-color: var(--color-primary-50);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  padding: 12px 0;
+}
+
+.nav-list {
+  color: var(--color-neutral-700);
+  background-color: var(--color-primary-50);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: var(--color-neutral-900);
+  border-bottom: 2px solid var(--color-primary-500);
+}
+
+.btn-menu {
+  display: none;
+  border: 0;
+  padding: 12px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ====== Mask ====== */
+
+.menu-open .mask {
+  display: none;
+}
+
+/* ====== Hero (首頁) ====== */
+
+.hero {
+  height: calc(100vh - 64px);
+  overflow: hidden;
+  background-color: var(--color-primary-50);
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.resume {
+  border: 1px solid var(--color-neutral-700);
+}
+
+.hero .main-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decorate-1 { position: absolute; top: 97px; left: -81px; }
+.decorate-2 { position: absolute; bottom: 87px; right: -80px; }
+.decorate-4 { position: absolute; top: 120px; left: -87px; }
+.decorate-5 { position: absolute; left: 211px; bottom: 83.53px; }
+.decorate-6 { display: none; }
+
+.decorate-3 {
+  position: absolute;
+
+  &.flower-left-bottom {
+    width: 80px;
+    height: 80px;
+    bottom: 192px;
+    left: 391px;
+  }
+  &.flower-left-top {
+    top: 56px;
+    left: -226px;
+  }
+  &.flower-right-center {
+    top: 206px;
+    right: -170px;
+  }
+}
+
+/* ====== Hero Banner（內頁用） ====== */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+}
+
+.hero-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Services Section ====== */
+
+.card-list .card {
+  min-width: 306px;
+}
+
+/* ====== Projects Section ====== */
+
+.project-card {
+  &:nth-of-type(1) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true");
+  }
+  &:nth-of-type(2) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true");
+  }
+  &:nth-of-type(3) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true");
+  }
+}
+
+.project-content {
+  max-width: 386px;
+}
+
+/* ====== Blog List Section ====== */
+
+.blog-list-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.blog-sidebar {
+  flex-shrink: 0;
+  width: 140px;
+}
+
+.blog-sidebar-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blog-sidebar-list li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.blog-sidebar-list li:hover {
+  background: var(--color-primary-100);
+}
+
+.blog-sidebar-list li.active {
+  background: var(--color-neutral-900);
+  color: var(--color-neutral-0);
+  font-weight: 700;
+}
+
+.blog-article-list {
+  flex: 1;
+}
+
+.blog-article-card {
+  display: flex;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--color-primary-100);
+}
+
+.blog-article-card:last-of-type {
+  border-bottom: none;
+}
+
+.blog-article-img {
+  flex-shrink: 0;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.blog-article-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.blog-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-top: 32px;
+}
+
+.blog-pagination-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  border: 1px solid transparent;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.blog-pagination-btn:hover {
+  background: var(--color-primary-100);
+}
+
+.blog-pagination-btn.active {
+  background: var(--color-neutral-700);
+  color: var(--color-neutral-0);
+}
+
+/* ====== Blog Post ====== */
+
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-neutral-500);
+  margin-bottom: 24px;
+}
+
+.breadcrumb a {
+  color: var(--color-neutral-500);
+  transition: color 0.15s;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-neutral-700);
+}
+
+.blog-post-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-neutral-900);
+  margin: 40px 0 16px;
+}
+
+.blog-post-content p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.blog-post-content img {
+  width: 100%;
+  border-radius: 4px;
+  margin: 24px 0 8px;
+}
+
+.blog-post-content .img-caption {
+  font-size: 12px;
+  color: var(--color-neutral-500);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.blog-post-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.blog-post-table th {
+  background: var(--color-neutral-700);
+  color: var(--color-neutral-0);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.blog-post-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-primary-100);
+  color: var(--color-neutral-700);
+}
+
+.blog-post-table tr:hover td {
+  background: var(--color-primary-50);
+}
+
+.blog-post-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  border-top: 1px solid var(--color-primary-100);
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--color-neutral-500);
+}
+
+/* ====== FAQ Accordion ====== */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-primary-100);
+}
+
+.faq-item summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-neutral-700);
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-neutral-500);
+  flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-body {
+  padding: 0 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-neutral-500);
+  line-height: 1.8;
+}
+
+/* ====== Service Steps ====== */
+
+.service-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-step {
+  display: flex;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-primary-100);
+  align-items: flex-start;
+}
+
+.service-step:last-child {
+  border-bottom: none;
+}
+
+.service-step-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-neutral-700);
+  color: var(--color-neutral-0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ====== Subscription ====== */
+
+.subscriptions {
+  position: relative;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-60a);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* ====== Footer / Contact ====== */
+
+.contact-input-half {
+  --gap: 24px;
+  width: calc((100% - var(--gap)) / 2);
+}
+
+/* ====== RWD: max-width 992px ====== */
+
+@media (max-width: 992px) {
+  .btn-menu {
+    display: block;
+    border: 1px solid var(--color-neutral-700);
+    border-radius: 50%;
+  }
+
+  .nav-list {
+    opacity: 0;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+
+  .nav-list.active {
+    opacity: 1;
+    max-height: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: opacity 0.3s ease-in, max-height 0.3s ease-in;
+  }
+
+  .nav-list li:first-child { padding-top: 12px; }
+  .nav-list li:last-child  { padding-bottom: 12px; }
+
+  .menu-open .mask {
+    display: block;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+  }
+
+  body.menu-open { overflow: hidden; }
+
+  /* Hero 首頁 */
+  .hero { height: calc(100vh - 60px); }
+
+  .decorate-1 { top: 26px; left: -27px; width: 80px; height: 79px; }
+  .decorate-2 { top: 274px; right: -25px; width: 80px; height: 69px; }
+  .decorate-3 {
+    &.flower-left-bottom { width: 80px; height: 80px; top: 414px; left: 249px; bottom: auto; }
+    &.flower-left-top    { display: none; }
+    &.flower-right-center{ display: none; }
+  }
+  .decorate-4, .decorate-5 { display: none; }
+  .decorate-6 { position: absolute; display: block; top: 398.41px; left: 134.5px; }
+
+  /* Services */
+  .card-list .card { min-width: 260px; }
+
+  /* Projects */
+  .project-card {
+    padding-top: 280px;
+    &:nth-of-type(1) { background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true"); }
+    &:nth-of-type(2) { background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_2.png?raw=true"); }
+    &:nth-of-type(3) { background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_3.png?raw=true"); }
+  }
+  .project-content { max-width: none; }
+
+  /* Blog */
+  .blog-card { min-width: 260px; }
+
+  .blog-list-layout { flex-direction: column; gap: 0; }
+  .blog-sidebar { width: 100%; overflow-x: auto; }
+  .blog-sidebar-list { flex-direction: row; gap: 4px; padding-bottom: 12px; }
+  .blog-article-card { flex-direction: column; }
+  .blog-article-img { width: 100%; height: 200px; }
+
+  /* Blog Post */
+  .blog-post-table { font-size: 12px; }
+  .blog-post-table th, .blog-post-table td { padding: 8px 10px; }
+
+  /* Contact */
+  .contact-input-half { width: 100%; }
+}
