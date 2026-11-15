@@ -1,8 +1,8 @@
-# Nelson 部落格頁面
+# 六角學院切版作業：Nelson 部落格頁
 
 六角學院課程的切版作業：依照課程提供的設計稿，切出設計師「Nelson」個人網站的「部落格」頁。
 
-**線上預覽：<https://tsuwebber.github.io/nelson-blog/blog.html>**
+**線上預覽：<https://tsuwebber.github.io/hexschool-blog-layout/blog.html>**
 
 ## 內容
 
